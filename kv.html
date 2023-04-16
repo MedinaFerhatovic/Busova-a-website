@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="slike/bus1.jpg" type="image/icon">
+    <link rel="stylesheet" href="kv.css">
+    <script src="menu.js"></script>
+
+    <title>BusKviz</title>
+</head>
+
+<body>
+    <div id="menu-logo">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="oBusovaci.html">O Busovači</a></li>
+                <li><a href="priroda.html">Priroda Busovače</a></li>
+                <li><a href="kv.html">Interakcije sa građanima</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </nav> 
+          </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div id="logo">
+            <img alt="logo" src="slike/bus.jpg">
+        </div>
+    </div>
+
+    <div class="start-screen">
+        <button id="start-button">Pa da počnemo</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 pitanja</span>
+            </div>
+            <div class="timer-div">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Idemo dalje</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+    </div>
+    <script src="kviz.js"></script>
+</body>
+
+</html>
+
+
+
